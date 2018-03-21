@@ -1,70 +1,24 @@
-# ZURB Template
+# Foundation Demo Page
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+Please see below for questions and comments I made along the way.
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+## QUESTIONS:
 
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+- What exact color should the "PERFECT BLOOD SUGAR" be?
+- Which part of the document is "Deck Copy"? (Deck Copy Font: Brandon Grotesque on Typekit)
 
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript module bundling with webpack
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript compression
-  - Image compression
+## COMMENTS:
 
-## Installation
+- Had it been a real project I would have optimized the images for web.
+- I added the (...) after "... years" in the **brown bar section** which was in the HTML Mock Up copy, but not in the image.
+- I added the (.) after "... switch it back on" in the **red gears section** which was in the HTML Mock Up copy, but not in the image.
+- There was not an image(s) for the "Order NOW & RECEIVE FREE SHIPPING" Berbinex C3 bottles. I used a screenshot and trimmed the edges in Photoshop for the time being.
+- On the image there is text that is repeated. Starting with line "So let's do this" through line "And that’s an important question". (I went with the content in the HTML Mock Up instead of repeating).
+- Had it been a real project I would updated the image file names and add correct alt tags for SEO.
 
-To use this template, your computer needs:
+## TODO:
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run 
-
-```bash
-foundation watch
-```
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-```
-
-Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
-
-```
-http://localhost:8000
-```
-
-To create compressed, production-ready assets, run `npm run build`.
+- add correct html element types (e.g. `<footer>`)
+- use chrome's print full screen feature
+- add to gitHub
+- add MS and Moz flex properties

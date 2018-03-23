@@ -2,6 +2,15 @@
 
 Please see below for questions and comments I made along the way.
 
+## UPDATES:
+
+- Removed all references to jQuery
+- Plucked Foundation CSS @imports I was not using
+- Integrated VueJS
+- Added Vue throughout page, using app.js separate JS logic and html and import modules
+- Added more personal approach capturing user's name
+- Added 'add to cart' count update
+
 ## QUESTIONS:
 
 - What exact color should the "PERFECT BLOOD SUGAR" be?

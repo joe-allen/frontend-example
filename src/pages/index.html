@@ -12,41 +12,44 @@ content in 'partials' directory -->
 
 {{> teaser}}
 
-<!-- body copy (black and white) -->
-<div class="grid-container">
-  <div class="grid-x grid-margin-x">
-    <div class="small-12 cell">
-      <p class="body-copy body-margin">According to a recent animal study published in the European Journal of Lipid Science and Technology, the answer is yes!</p>
-      <p class="body-copy body-margin">Here’s how:</p>
-      <p class="body-copy body-margin">Scientists have discovered keeping your blood sugar healthy boils down to a simple enzyme in your body.</p>
-      <p class="body-copy body-margin">If this enzyme is shut down, that leads to...</p>
-      <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Concerning <strong>insulin levels...</strong></em></p>
-      <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Struggling to keep your <strong>HbA1c</strong> in the normal range...</em></p>
-      <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Or frustration with your <strong>belly fat</strong> and <strong>fatigue...</strong></em></p>
-      <p class="body-copy body-margin">On the other hand, if this enzyme is active in your body...</p>
-    </div>
-  </div>
-</div>
-
-<main class="wrapper">
-
-  {{> parallax}}
-  {{> brown-bar}}
-
-  <!-- body copy (black and white) -->
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="small-12 cell">
-        <p class="body-copy body-margin">So what does this have to do with eating chocolate?</p>
-        <p class="body-copy body-margin">Simple... it turns out you can activate this enzyme by eating chocolate! Seriously!</p>
-        <p class="body-copy body-margin">If you’re skeptical, I completely understand. <strong>And why wouldn’t you be?</strong></p>
-        <p class="body-copy body-margin">After all, if you’re concerned about your blood sugar... everyone out there is telling you something different...</p>
+  <div id="demo">
+    <!-- body copy (black and white) -->
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="small-12 cell">
+            <p class="body-copy body-margin">Know what else is awesome <input v-model="userName" class="custom-input" placeholder="Your name">? According to a recent animal study published in the European Journal of Lipid Science and Technology, the answer is yes!</p>
+            <p class="body-copy body-margin">Here’s how:</p>
+            <p class="body-copy body-margin">Scientists have discovered keeping your blood sugar healthy boils down to a simple enzyme in your body.</p>
+            <p class="body-copy body-margin">If this enzyme is shut down, that leads to...</p>
+            <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Concerning <strong>insulin levels...</strong></em></p>
+            <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Struggling to keep your <strong>HbA1c</strong> in the normal range...</em></p>
+            <p class="body-copy body-margin"><i class="fa fa-check" aria-hidden="true"></i><em>Or frustration with your <strong>belly fat</strong> and <strong>fatigue...</strong></em></p>
+            <p class="body-copy body-margin">On the other hand, if this enzyme is active in your body...</p>
+        </div>
       </div>
     </div>
+
+    <main class="wrapper">
+
+      {{> parallax}}
+      {{> brown-bar}}
+
+      <!-- body copy (black and white) -->
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="small-12 cell">
+            <p class="body-copy body-margin">So &#123;&#123;userName&#125;&#125;<span v-if="userName">,</span> what does this have to do with eating chocolate?</p>
+            <p class="body-copy body-margin">Simple... it turns out you can activate this enzyme by eating chocolate! Seriously!</p>
+            <p class="body-copy body-margin">If you’re skeptical, I completely understand. <strong>And why wouldn’t you be?</strong></p>
+            <p class="body-copy body-margin">After all, if you’re concerned about your blood sugar... everyone out there is telling you something different...</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
   </div>
-
-</main>
-
 {{> gear}}
 
-{{> guarantee}}
+<div id="cartGuarantee">
+  {{> guarantee}}
+</div>
